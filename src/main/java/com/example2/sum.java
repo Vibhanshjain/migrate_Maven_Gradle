@@ -1,3 +1,4 @@
+package com.example2;
 public class sum {
     public static void main(String[] args) {
         if (args.length < 2) {
