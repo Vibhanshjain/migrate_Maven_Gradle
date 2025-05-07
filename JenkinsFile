@@ -28,11 +28,11 @@ pipeline {
         
        
         stage('Run Application') {
-            steps {
-                // Start the JAR application
-                sh 'java -jar build/libs/my-app-1.0-SNAPSHOT.jar'
-            }
-        }
+    steps {
+        sh 'java -cp target/my-app-1.0-SNAPSHOT.jar com.example2.sum 5 10'
+    }
+}
+
 
         
     }
